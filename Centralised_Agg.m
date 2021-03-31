@@ -7,7 +7,6 @@
 
 
 %% Pre-Defined Model 
-% (From Aren's work) 
 T = 0.1;
 
 Ad = [1 0 0.09629 0 0 0.03962;
