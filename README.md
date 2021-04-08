@@ -8,3 +8,9 @@ Scripts included:
 - Game_ADMM.m
 
 - Centralised_Agg.m
+
+- SB_SetupADMM.m
+
+- SB_RunADMM.m
+
+- SB_AnalyseADMM.m 
