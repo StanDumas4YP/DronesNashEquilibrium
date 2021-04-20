@@ -14,6 +14,8 @@ Scripts included:
   - A through convergence check is included, relying on private agent information and threholds defined manually
 
 - Centralised_Agg.m
+  - A centrlaised algorithm finding the optimal solution for the sum of the individual agent cost function
+  - Number of drones, horizon, intital position, reference points and weighing matrices can all be changed in the 'variables' Section of the code
 
 - SB_SetupADMM.m
   - Must be reun before SB_RunADMM.m
