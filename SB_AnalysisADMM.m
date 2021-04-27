@@ -29,7 +29,7 @@ end
 
 n_star = size(sup_constr,1);
 
-%% Evaluating Risk  % % % MUST CHANGE; test with M = 1000 and M = 10000 
+%% Evaluating Risk  
 [eps, t_out] = epsilon(M*N*nu, M_sample, Bet);
 eps_priori = eps(M*N*nu+1);
 epsDegPriori = epsilonDegen(M*N*nu, M_sample, Bet);
