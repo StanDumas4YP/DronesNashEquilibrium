@@ -5,7 +5,7 @@
 % Supervisor: Kostas Margellos 
 % Running the Scenario Based analysis for the Game
 
-%% Identifying support Constraints  COULD BE WRONG CHANGE DATA
+%% Identifying Compression Set 
 % Error tolerance
 th_sup = 10^(-5);
 inp = [];
