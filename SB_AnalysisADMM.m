@@ -32,12 +32,12 @@ n_star = size(sup_constr,1);
 %% Evaluating Risk  
 [eps, t_out] = epsilon(M*N*nu, M_sample, Bet);
 eps_priori = eps(M*N*nu+1);
-epsDegPriori = epsilonDegen(M*N*nu, M_sample, Bet);
+epsDegPriori = epsilonDegen2(M*N*nu, M_sample, Bet);
 
 % evaluating epsilon A -posteriori
 [eps, t_out] = epsilon(n_star, M_sample, Bet);
 eps_n_star = eps(n_star+1);
-epsDeg = epsilonDegen(n_star, M_sample, Bet);
+epsDeg = epsilonDegen2(n_star, M_sample, Bet);
 
 %% SB - Monte Carlo
 
@@ -95,6 +95,10 @@ end
 
 function eps = epsilonDegen(k, N, bet)
     eps = 1 - ((bet/N) * 1 / (nchoosek(N,k))) ^ (1/(N-k));
+end
+
+function eps = epsilonDegen2(k, N, bet)
+    eps = 1 - ((bet/N) ^ (1/(N-k)) * 1 / exp(1/(N-k)*(-sum(log(1:k))+sum(log(N-k+1:N)))));
 end
 
 function realisation = real_Norm(M, N, nu, mu, sig, lower, upper)    
