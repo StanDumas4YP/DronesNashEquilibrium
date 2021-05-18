@@ -30,5 +30,5 @@ Scripts included:
 
 - SB_AnalyseADMM.m 
   - Must be run after SB_RunADMM.m
-  - Outputs a prioir and a posteriori certificates on the game setup and solved in SB_SetupADMM.m and SB_RunADMM.m
+  - Outputs a priori and a posteriori certificates on the game setup and solved in SB_SetupADMM.m and SB_RunADMM.m
   - Conducts a Monte Carlo analysis to analyse the precision of said certificates
