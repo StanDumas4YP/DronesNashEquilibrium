@@ -29,9 +29,7 @@ end
 
 n_star = size(sup_constr,1);
 
-%% Evaluating Risk  
-[eps, t_out] = epsilon(M*N*nu, M_sample, Bet);
-eps_priori = eps(M*N*nu+1);
+%% Evaluating Risk  a priori 
 epsDegPriori = epsilonDegen2(M*N*nu, M_sample, Bet);
 
 % evaluating epsilon A -posteriori
